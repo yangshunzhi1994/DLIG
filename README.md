@@ -16,6 +16,7 @@ Alternatively, you can train a teacher model from scratch as follows:
 
 ```bash
 python train_scratch.py --model wrn40_2 --dataset cifar10 --batch-size 256 --lr 0.1 --epoch 200 --gpu 0
+```
 
 ### 3. Reproduce our results
 
