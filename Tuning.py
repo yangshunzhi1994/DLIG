@@ -49,39 +49,6 @@ print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
 
 
 
-# print ('The specific model being run is:                TinyImageNet,  DFKD ')
-# os.system("python train_scratch.py --model resnet34 --batch-size 256 --dataset tiny_imagenet")
-# print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
-
-# print ('The specific model being run is:                TinyImageNet,  DFKD ')
-# os.system("python datafree_kd.py --batch_size 256 --synthesis_batch_size 200 --lr 0.1 --gpu 0 --warmup 20 --epochs 320 --dataset tiny_imagenet --lr_g 4e-3 --teacher resnet34 --student resnet18 --save_dir run/tir34r18-ours --adv 1.33 --bn 10.0 --oh 0.5 --div 1.0 --g_steps 60 --g_life 10 --g_loops 4 --gwp_loops 20 --kd_steps 1000 --ep_steps 1000 --log_tag tir34r18-ours-ep320 ")
-# print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
-
-
-
-
-# print ('The specific model being run is:                TinyImageNet,  DFKD ')
-# os.system("python train_scratch.py --model vgg11 --batch-size 256 --dataset tiny_imagenet")
-# print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
-
-# print ('The specific model being run is:                TinyImageNet,  DFKD')
-# os.system("python datafree_kd.py --batch_size 256 --synthesis_batch_size 200 --lr 0.1 --gpu 0 --warmup 20 --epochs 320 --dataset tiny_imagenet --lr_g 4e-3 --teacher vgg11 --student resnet18 --save_dir run/tiv11r18-ours --adv 1.33 --bn 10.0 --oh 0.5 --div 1.0 --g_steps 60 --g_life 10 --g_loops 4 --gwp_loops 20 --kd_steps 1000 --ep_steps 1000 --log_tag tiv11r18-ours-ep320 ")
-# print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
-
-
-
-
-# print ('The specific model being run is:                TinyImageNet,  DFKD ')
-# os.system("python train_scratch.py --model wrn40_2 --batch-size 256 --dataset tiny_imagenet --seed 0")
-# print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
-
-# print ('The specific model being run is:                TinyImageNet,  DFKD')
-# os.system("python datafree_kd.py --batch_size 256 --synthesis_batch_size 200 --lr 0.1 --gpu 0 --warmup 20 --epochs 320 --dataset tiny_imagenet --lr_g 4e-3 --teacher wrn40_2 --student wrn16_2 --save_dir run/tiw402w162-ours --adv 1.33 --bn 10.0 --oh 0.5 --div 1.0 --g_steps 60 --g_life 10 --g_loops 4 --gwp_loops 20 --kd_steps 1000 --ep_steps 1000 --log_tag tiw402w162-ours-ep320 ")
-# print ('!!!!!!!!!!!!!!       Done          !!!!!!!!!!!!!!!!!!!!!!\n\n')
-
-
-
-
 
 print ('The specific model being run is:                nyuv2, stable hierarchical DFAD ')
 os.system("python -u DFAD_nyu_deeplab.py --data_root ./data/NYUv2 --ckpt checkpoints1/pretrained/nyuv2-deeplabv3_resnet50.pt --epochs 320 --epoch_itrs 50 --batch_size 64 --test_batch_size 9 --workers 0 --img_size 128 --test_size 256 --lr_S 0.1 --lr_G 0.001 --adv 1.33 --bn 2.0 --oh 0.0 --div 0.1 --confidence 0.1 --balance 0.1 --scheduler --step_size 100 --lr_gamma 0.3 --weight_decay 0.00005 --save_img --save_dir checkpoints1/dfad-nyuv2-stable2 --log_tag dfad-nyuv2-stable6-ep320")
